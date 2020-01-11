@@ -1,14 +1,24 @@
-
+/*
+ * Java class for fact
+ */
 public class Fact {
+	//the subject of this sentence
 	String subject;
+	//the statement is either:  born,died,author..
 	String statement;
+	//the object
 	String object;
+	
+	//Constructor
 	public Fact(String subject, String statement, String object) {
 		super();
 		this.subject = subject;
 		this.statement = statement;
 		this.object = object;
 	}
+	/*
+	 * the getters and setters for variables
+	 */
 	public String getSubject() {
 		return subject;
 	}
