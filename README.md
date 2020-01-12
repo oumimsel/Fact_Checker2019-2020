@@ -1,10 +1,21 @@
 # Fact_Checker2019-2020
-##Team
+
+Paragraph of project description goes here
+
+## Team
 Team name: Oumama Msellek
 Member:Oumama Msellek
 
-##Approach
+### Approach
 
-##How to build the project
+approach
+### Build and run the project
 
-##Non working facts
+Say what the step will be
+
+## Non working facts
+
+```
+Give an example
+```
+
