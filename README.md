@@ -4,7 +4,8 @@ Paragraph of project description goes here
 
 ## Team
 Team name: Oumama Msellek
-Member:Oumama Msellek
+
+Members:Oumama Msellek
 
 ### Approach
 
