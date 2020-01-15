@@ -15,30 +15,27 @@ approach
 Say what the step will be
 
 ## Example of Non working facts
+More information can be found in the pdf file:
+
 Facts treating the Career History of the player:
 ```
 "Anthony Davis team is Los Angeles Lakers"
-Steve Blake team is Phoenix Suns
 ```
 Facts with name separated by a "'s" or "'" are likely to be non working example:
 ```
 "Clerks subsidiary is Brian O'Halloran"
- "Hard Day's Night (film) stars John Junkin"  
 ```
 Facts which subject could not be found on Wikipedia:
 ```
 "Impetus Technologies' foundation place is Portsmouth" 
 ```
-Facts which the subject to be searched has many Wikipedia pages:
+Facts which subject to be searched has many Wikipedia pages:
 ```
-"Justin James team is Sacramento Kings"
-"Blind Lake author is Robert Charles Wilson"
-"Josh Jackson team is Memphis Grizzlies"
-"Nene team is Houston Rockets"    
+"Justin James team is Sacramento Kings" 
 ```
 Facts which meaning is ambiguous are considered a false positive:
 ```
 "Nelson Rockefeller spouse is New York City"
-"Beverly Hills, California is Harold Lloyd better half"
+
 ```
 
