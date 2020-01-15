@@ -49,13 +49,6 @@ public class XmlDataStoring {
            org.w3c.dom.Element subject=  doc.createElement("subject");
            ((Node) fact).appendChild((Node) subject);
 
-           org.w3c.dom.Element object =  doc.createElement("object");
-           ((Node) fact).appendChild((Node) object);
-
-           // wiki statement element
-           org.w3c.dom.Element statement =  doc.createElement("statement");
-            ((Node) fact).appendChild((Node) statement);
-
            // infoBox element
             org.w3c.dom.Element infoBox =  doc.createElement("infoBox");
             ((Node) fact).appendChild((Node) infoBox);
@@ -86,7 +79,7 @@ public class XmlDataStoring {
     * @param box: the infoBox information from wiki
     * @param txt : the wikipedia text
     */
-   public void writeXMlFile(String subj,String obj,String stat,String box,String txt) {
+   public void writeXMlFile(String subj,String box,String txt) {
    	 try {
    		    //Instantiate the DocumentBuilder
             DocumentBuilder icBuilder = icFactory.newDocumentBuilder();
@@ -100,15 +93,6 @@ public class XmlDataStoring {
             org.w3c.dom.Element subject=  doc.createElement("subject");
             subject.appendChild(doc.createTextNode(subj));
             ((Node) fact).appendChild((Node) subject);
- 
-            org.w3c.dom.Element object =  doc.createElement("object");
-            object.appendChild(doc.createTextNode(obj));
-            ((Node) fact).appendChild((Node) object);
- 
-            // wiki statement element
-            org.w3c.dom.Element statement =  doc.createElement("statement");
-            statement.appendChild(doc.createTextNode(stat));
-             ((Node) fact).appendChild((Node) statement);
  
             // infoBox element
              org.w3c.dom.Element infoBox =  doc.createElement("infoBox");

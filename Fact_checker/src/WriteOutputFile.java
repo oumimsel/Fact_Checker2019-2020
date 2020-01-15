@@ -53,7 +53,7 @@ public class WriteOutputFile {
 	    Instant finish = Instant.now();
 	    long timeElapsed = Duration.between(start, finish).toMillis();
 	    
-	    System.out.println("Done it toook"+timeElapsed+"ms");
+	    System.out.println("file took "+timeElapsed+" ms");
 		   
 	    writer.close();
 	}}

@@ -33,7 +33,7 @@ public class FetchFromWikipedia {
 	String object=fact.getObject().trim();
 	String tobeChecked=".*"+object+".*";
 	
-	/*
+	/**
 	// to search in the xml file
 	if(xml.search(fact.getSubject())) {
 		System.out.println("check in xml file");
@@ -63,7 +63,7 @@ public class FetchFromWikipedia {
 	
 		if(level==0) {
 			//storing the info in the xml File
-		xml.writeXMlFile(fact.getSubject(), fact.getObject(), statWiki, box, "");
+		xml.writeXMlFile(fact.getSubject(), box, "");
 		}
 		*/
 		//get the veracity by sarching the infoBox
@@ -72,19 +72,18 @@ public class FetchFromWikipedia {
 		if(veracity.equals("0.0")&& level==1) {
 			Elements wikiText= doc.select(".mw-parser-output > p");
 			System.out.println("search in txt");
-		     /*
+		    /*
 			// used to store info in the xml file
 			//processing the wikipedia text
 			for(Element t:wikiText) {
 				text =text+t.text() ;}
-			xml.writeXMlFile(fact.getSubject(), fact.getObject(), statWiki, box, text);
-		     */
+			xml.writeXMlFile(fact.getSubject(), box, text);
+		    */
 			veracity=searchOnWikiText(wikiText,object);
 		}
 	}catch(Exception e) {
 		System.out.println("error while fetching information from the wikipedia: "+e);
 	}
-	
 	System.out.println("the veracity "+veracity);
 	
 	return veracity;

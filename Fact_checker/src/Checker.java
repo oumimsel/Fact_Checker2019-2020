@@ -12,20 +12,19 @@ import opennlp.tools.sentdetect.SentenceModel;
 public class Checker {
 	public static void main(String[] args) throws IOException  {
 		
-		//for res 3 I added the level to becked 
-		//File inputFile= new File("src/ressource_text/new.tsv");
-		 XmlDataStoring xmlStoring= new XmlDataStoring();
-		 xmlStoring.createXmlFile();
+		//create an XML file for storaging informtion
+		// XmlDataStoring xmlStoring= new XmlDataStoring();
+		 //xmlStoring.createXmlFile();
 		
 		File inputFileTrain= new File("src/ressource_text/SNLP2019_training.tsv");
-		File outputTrain=new File("trainResult.ttl");
+		File outputTrain=new File("src/results/trainResult.ttl");
 		File inputFileTest= new File("src/ressource_text/SNLP2019_test.tsv");
-		File outputTest=new File("testResult.ttl");
+		File outputTest=new File("src/results/testResult.ttl");
 		
-		
+		//write the results
 		 WriteOutputFile.writeResultToFile(inputFileTrain,outputTrain);
-		 WriteOutputFile.writeResultToFile(inputFileTest,outputTest);
-			
+	     WriteOutputFile.writeResultToFile(inputFileTest,outputTest);
+	    
 	}
 		
 }
