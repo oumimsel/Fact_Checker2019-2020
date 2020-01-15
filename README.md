@@ -13,10 +13,10 @@ The app starts at first with reading the input file (.tsv). It processes each li
 Each fact extracted from the previous step is treated separately. Using the regular expression concept, we delete at first any symbols or non needed alphabets, after that with the "statement" or the "predicate" of the fact ex.:died, honour, born.., we extract the "subject" and the "object" of the fact using the index and length of the fact.
 e.g.:
 ```
-"Naples is Alfonso IV of Aragon's nascence place." will be changed to "Naples is Alfonso IV of Aragon nascence place"
- Subject:Alfonso IV of Aragon
- Object:Naples
- Statement:nascence place
+Fact: "Naples is Alfonso IV of Aragon's nascence place." will be changed to "Naples is Alfonso IV of Aragon nascence place"
+Subject: Alfonso IV of Aragon
+Object: Naples
+Statement: nascence place
 ```
 Unfortunately some of the "statement" ex.:honour, stars, generator.. used in the facts are not similar to the ones used in Wikipedia info Box which makes the validation of the subject againts the object using the statement problematic. For this reason, we assigned for each fact a new predicated called "wiki statement" inspired from the wiki page.
 e.g.:
