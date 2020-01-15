@@ -10,10 +10,23 @@ Members: Oumama Msellek
 ### Approach
 
 The app starts at first with reading the input file (.tsv). It processes each line of this file, separates the Ids and their corresponding facts and stores them as a hash map and a list.
-Each fact extracted from the previous step is treated separately. Using the regular expression concept, we delete at first any symbols or non needed alphabets, after that with the "statement" or the "predicate" of the fact ex.:died, honour, born.., we extract the "subject" and the "object" of the fact. Unfortunately some of the "statement" ex.:honour, stars, generator.. used in the facts are not similar to the ones used in Wikipedia info Box. For this reason, we assigned for each fact a new predicated called "wiki statement" ex.: "statement": better half --> "wiki statement": Spouse(s), and we created a new java object called "Fact" with the parameters: subject, object and wiki statement. For time gain, it is sometimes enough to search for the accuracy of a "Fact" only in the info Box of Wikipedia, for this reason we create the "level" parameter to determine the level of the search: . 
+Each fact extracted from the previous step is treated separately. Using the regular expression concept, we delete at first any symbols or non needed alphabets, after that with the "statement" or the "predicate" of the fact ex.:died, honour, born.., we extract the "subject" and the "object" of the fact using the index and length of the fact.
+ex:
+```
+"Naples is Alfonso IV of Aragon's nascence place." will be changed to "Naples is Alfonso IV of Aragon nascence place"
+subject:Alfonso IV of Aragon
+Object:Naples
+Statement:nascence place
+```
+Unfortunately some of the "statement" ex.:honour, stars, generator.. used in the facts are not similar to the ones used in Wikipedia info Box. For this reason, we assigned for each fact a new predicated called "wiki statement" 
+ex.:
+```
+"statement": nascence place --> "wiki statement": Born
+"statement": better half --> "wiki statement": Spouse(s)
+```
+After we creat a new java object called "Fact" with the parameters: subject, object and wiki statement. For time gain, it is sometimes enough to search for the accuracy of a "Fact" only in the info Box of Wikipedia, for this reason we create the "level" parameter to determine the level of the search: . 
 
-In the search for veracity step, we fetch the wiki page using the subject and for each "Fact" we search for its veracity in this page given its "wiki statement" and "level". 
-In this step, we tested also the concept of storing information in a XML file and checking if the information already exists to avoid real time data search, but because of some reasons that will be mentioned in section \ref{re} we dropped the storage concept.
+In the search for veracity step, we fetch the wiki page using the subject, for each "Fact" we search for its veracity in this page given its "wiki statement" and "level". 
 
 Finally, we write the results in a file (.ttl) respecting the result format described in the mini-project presentation and count the elapsed time taken to process all the facts of the input file.
 ### Build and run the project
