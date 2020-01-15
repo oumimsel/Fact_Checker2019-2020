@@ -17,14 +17,14 @@ Say what the step will be
 ## Example of Non working facts
 
 ```
-Clerks subsidiary is Brian O'HalloranClerks subsidiary is Brian O'Halloran
-Hard Day's Night (film) stars John Junkin
-Impetus Technologies' foundation place is Portsmouth
-Justin James team is Sacramento Kings
-Blind Lake author is Robert Charles Wilson
-Josh Jackson team is Memphis Grizzlies
-Nene team is Houston Rockets
-Nelson Rockefeller spouse is New York City
-Beverly Hills, California is Harold Lloyd better half
+"Clerks subsidiary is Brian O'HalloranClerks subsidiary is Brian O'Halloran"
+"Hard Day's Night (film) stars John Junkin"
+"Impetus Technologies' foundation place is Portsmouth"
+"Justin James team is Sacramento Kings"
+"Blind Lake author is Robert Charles Wilson"
+"Josh Jackson team is Memphis Grizzlies"
+"Nene team is Houston Rockets"
+"Nelson Rockefeller spouse is New York City"
+"Beverly Hills, California is Harold Lloyd better half"
 ```
 
