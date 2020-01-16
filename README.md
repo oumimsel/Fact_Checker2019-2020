@@ -10,7 +10,7 @@ Members: Oumama Msellek
 ### Approach
 
 The app starts at first with reading the input file (.tsv). It processes each line of this file, separates the Ids and their corresponding facts and stores them as a hash map and a list.
-Each fact extracted from the previous step is treated separately. Using the regular expression concept, we delete at first any symbols or non needed alphabets, after that with the "statement" or the "predicate" of the fact ex.:died, honour, born.., we extract the "subject" and the "object" of the fact using the index and length of the fact.
+Each fact extracted from the previous step is treated separately. Using the regular expression concept, we delete at first any symbols or non needed alphabets, after that with the "statement" or the "predicate" of the fact ex.: died, honour, born.., we extract the "subject" and the "object" of the fact using the index and length of the fact.
 e.g.:
 ```
 Fact: "Naples is Alfonso IV of Aragon's nascence place." will be changed to "Naples is Alfonso IV of Aragon nascence place"
@@ -31,9 +31,15 @@ In the search for veracity step, we fetch the wiki page using the subject, proce
 Finally, we write the results in a file (.ttl) respecting the result format described in the mini-project presentation and count the elapsed time taken to process all the facts of the input file.
 ### Build and run the project
 
-Say what the step will be
+The application is a maven project. The needed library (jsoup 1.12.1) and the input files are already included in the application.
+For a successful run, follow the steps:
+-Download the project or clone the URL from the git 
+-Import the project in your IDE: in case you choose the download option than import from an existing project. The other way is to
+import directly from the version control (git). The importation steps of the project are dependent of the IDE.
+-Buil and run the application (Checker.java).
+-Check the result file under the path "src\results". 
 
-## Example of Non working facts
+## Non working fact types:
 
 Facts treating the Career History of the player:
 ```
