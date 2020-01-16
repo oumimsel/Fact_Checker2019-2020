@@ -43,7 +43,7 @@
 <http://swc2017.aksw.org/task2/dataset/3814816><http://swc2017.aksw.org/hasTruthValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://swc2017.aksw.org/task2/dataset/3365656><http://swc2017.aksw.org/hasTruthValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://swc2017.aksw.org/task2/dataset/3389407><http://swc2017.aksw.org/hasTruthValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
-<http://swc2017.aksw.org/task2/dataset/3869557><http://swc2017.aksw.org/hasTruthValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
+<http://swc2017.aksw.org/task2/dataset/3869557><http://swc2017.aksw.org/hasTruthValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://swc2017.aksw.org/task2/dataset/3881675><http://swc2017.aksw.org/hasTruthValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://swc2017.aksw.org/task2/dataset/3476391><http://swc2017.aksw.org/hasTruthValue> "0.0"^^<http://www.w3.org/2001/XMLSchema#double> .
 <http://swc2017.aksw.org/task2/dataset/3410795><http://swc2017.aksw.org/hasTruthValue> "1.0"^^<http://www.w3.org/2001/XMLSchema#double> .

@@ -18,7 +18,7 @@ public class Checker {
 		File outputTest=new File("src/results/testResult.ttl");
 		
 		//write the results
-		// WriteOutputFile.writeResultToFile(inputFileTrain,outputTrain);
+		 WriteOutputFile.writeResultToFile(inputFileTrain,outputTrain);
 	     WriteOutputFile.writeResultToFile(inputFileTest,outputTest);
 	    
 	}
