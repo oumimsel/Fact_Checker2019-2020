@@ -14,9 +14,7 @@ import org.jsoup.select.Elements;
 public class FetchFromWikipedia {
 	//the url used to search in wiki
 	String url = "http://en.wikipedia.org/wiki/";
-	// Instantiation of xmlDataStoring class
-	XmlDataStoring xml=new XmlDataStoring();
-
+	
 	/**
 	 * Method used to fetch the information from wiki and check the veracity of the fact
 	 * @param fact : the Fact object
@@ -33,14 +31,7 @@ public class FetchFromWikipedia {
 	String object=fact.getObject().trim();
 	String tobeChecked=".*"+object+".*";
 	
-	/**
-	// to search in the xml file
-	if(xml.search(fact.getSubject())) {
-		System.out.println("check in xml file");
-		veracity=xml.checkForInfoXMLFile(fact.getSubject(), fact.getObject(), statWiki);
-	}
-	else {
-	*/
+	
 	try {
 		
 		
@@ -52,33 +43,13 @@ public class FetchFromWikipedia {
 		Document doc = Jsoup.parseBodyFragment(body);
 		//Extract all the rows in the infoBox
 		Elements infoBox = doc.select(".infobox tr");
-		String box="";
-		String text="";
-		/*
-		 // used to store in the xml file
-		//loop and iterate through the rows of the infoBox
-		for(Element r:infoBox) {
-			box =box+r.text() ;
-			}
-	
-		if(level==0) {
-			//storing the info in the xml File
-		xml.writeXMlFile(fact.getSubject(), box, "");
-		}
-		*/
 		//get the veracity by sarching the infoBox
 		veracity=searchOnInfoBox(infoBox, tobeChecked, statWiki,fact,level);
 		//if the veracity is "0.0" and the level is 1 then search also the wiki text
 		if(veracity.equals("0.0")&& level==1) {
 			Elements wikiText= doc.select(".mw-parser-output > p");
-			System.out.println("search in txt");
-		    /*
-			// used to store info in the xml file
-			//processing the wikipedia text
-			for(Element t:wikiText) {
-				text =text+t.text() ;}
-			xml.writeXMlFile(fact.getSubject(), box, text);
-		    */
+			System.out.println("search in wiki text");
+		  
 			veracity=searchOnWikiText(wikiText,object);
 		}
 	}catch(Exception e) {
@@ -118,8 +89,8 @@ public String searchOnInfoBox(Elements rows,String tobeChecked,String statWiki,F
 		Elements tds = r.select("td");
 		//iterate and process the sub rows
 		for(Element td:tds) {
-		System.out.println("hello"+tds.text());
-		System.out.println("the to be cheecked"+fact.getObject());
+		System.out.println(tds.text());
+		System.out.println("the to be checked"+fact.getObject());
 		//if the sub rows contain the object return 1
 		 if(tds.text().contains(fact.getObject())){
 			 veracity="1.0";
