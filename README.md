@@ -33,16 +33,16 @@ Finally, we write the results in a file (.ttl) respecting the result format desc
 
 The application is a maven project. The needed library (jsoup 1.12.1) and the input files are already included in the application.
 
-For a successful run, follow the steps:
+For a successful execution of the project, follow the steps:
 
--Download the project or clone the URL from the git 
+1. Download the project or clone the URL from the git 
 
--Import the project in your IDE: in case you choose the download option than import from an existing project. The other way is to
-import directly from the version control (git). The importation steps of the project are dependent of the IDE.
+2. Import the project in your IDE: in case you choose the download option than import from an existing project. The other way is to
+   import directly from the version control (git). The importation steps of the project are dependent of the IDE.
 
--Buil and run the application (Checker.java).
+3. Build and run the application (Checker.java).
 
--Check the result file under the path "src\results". 
+4. Check the result file under the path "src\results". 
 
 ## Non working fact types:
 
