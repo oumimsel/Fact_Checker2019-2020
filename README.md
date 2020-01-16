@@ -37,8 +37,7 @@ For a successful execution of the project, follow the steps:
 
 1. Download the project or clone the URL from the git 
 
-2. Import the project in your IDE: in case you choose the download option than import from an existing project. The other way is to
-   import directly from the version control (git). The importation steps of the project are dependent of the IDE.
+2. Import the project in your IDE: In case you have downloaded the project, than choose to import from an existing project. The other      way is to import directly from the version control (git) and clone the git URL. 
 
 3. Build and run the application (Checker.java).
 
