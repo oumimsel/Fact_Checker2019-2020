@@ -15,10 +15,8 @@ For a successful execution of the project, follow the steps:
 
 1. Download the project or clone the URL from the git 
 
-2. Import and open the maven project in your IDE: In case you have downloaded the project, than choose to import from an existing       
-   project. The other way is to import directly from the version control (git) and clone the git URL. 
-   
-   
+2. Import and open the maven project in your IDE: In case you have downloaded the project, than choose to import from an existing        project. The other way is to import directly from the version control (git) and clone the git URL.        
+  
    The import process is related to the IDE you choose to use https://eclipsesource.com/blogs/tutorials/egit-tutorial/ or      
    https://www.jetbrains.com/help/idea/import-project-or-module-wizard.html
 
