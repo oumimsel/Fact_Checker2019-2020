@@ -7,6 +7,20 @@ Team name: Oumama Msellek
 
 Members: Oumama Msellek
 
+### Build and run the project
+
+The application is a maven project. The needed library (jsoup 1.12.1) and the input files are already included in the application.
+
+For a successful execution of the project, follow the steps:
+
+1. Download the project or clone the URL from the git 
+
+2. Import the project in your IDE: In case you have downloaded the project, than choose to import from an existing project. The other      way is to import directly from the version control (git) and clone the git URL 
+
+3. Build and run the application (Checker.java).
+
+4. Check the result file under the path "src\results". 
+
 ### Approach
 
 The app starts at first with reading the input file (.tsv). It processes each line of this file, separates the Ids and their corresponding facts and stores them as a hash map and a list.
@@ -29,19 +43,7 @@ After we creat a new java object called "Fact" with the parameters: subject, obj
 In the search for veracity step, we fetch the wiki page using the subject, processing each "Fact", we search for the veracity in this page given its "wiki statement" and "level". 
 
 Finally, we write the results in a file (.ttl) respecting the result format described in the mini-project presentation and count the elapsed time taken to process all the facts of the input file.
-### Build and run the project
 
-The application is a maven project. The needed library (jsoup 1.12.1) and the input files are already included in the application.
-
-For a successful execution of the project, follow the steps:
-
-1. Download the project or clone the URL from the git 
-
-2. Import the project in your IDE: In case you have downloaded the project, than choose to import from an existing project. The other      way is to import directly from the version control (git) and clone the git URL 
-
-3. Build and run the application (Checker.java).
-
-4. Check the result file under the path "src\results". 
 
 ## Non working fact types:
 
