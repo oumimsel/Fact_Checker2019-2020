@@ -7,7 +7,7 @@ Team name: Oumama Msellek
 
 Members: Oumama Msellek
 
-### Build and run the project
+### Instructions for project execution
 
 The application is a maven project. The needed library (jsoup 1.12.1) and the input files are already included in the application.
 
